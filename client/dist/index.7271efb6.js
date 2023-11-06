@@ -142,13 +142,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"j2WyO":[function(require,module,exports) {
+})({"bgABq":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "f8a609f57826abd7";
+module.bundle.HMR_BUNDLE_ID = "7fb4cd117271efb6";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -2935,11 +2935,11 @@ process.umask = function() {
     return 0;
 };
 
-},{}],"2Ew96":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$c1db = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{}],"2kQhy":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$f00f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$c1db.prelude(module);
+$parcel$ReactRefreshHelpers$f00f.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -2948,372 +2948,46 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactDom = require("react-dom");
 var _reactDomDefault = parcelHelpers.interopDefault(_reactDom);
-const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-        href: "/",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-            className: "logo",
-            alt: "logo",
-            src: "https://obs.line-scdn.net/0m0339dd5b72513e8a8d6127b836e5ecf1e128f1da5cb7?0"
-        }, void 0, false, {
-            fileName: "App.js",
-            lineNumber: 6,
-            columnNumber: 5
-        }, undefined)
-    }, void 0, false, {
-        fileName: "App.js",
-        lineNumber: 5,
-        columnNumber: 3
-    }, undefined);
-_c = Title;
-const Header = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "header",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 16,
-                columnNumber: 5
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "nav-items",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "Home"
-                        }, void 0, false, {
-                            fileName: "App.js",
-                            lineNumber: 19,
-                            columnNumber: 9
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "about us"
-                        }, void 0, false, {
-                            fileName: "App.js",
-                            lineNumber: 20,
-                            columnNumber: 9
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "contact us"
-                        }, void 0, false, {
-                            fileName: "App.js",
-                            lineNumber: 21,
-                            columnNumber: 9
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: "cart"
-                        }, void 0, false, {
-                            fileName: "App.js",
-                            lineNumber: 22,
-                            columnNumber: 9
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "App.js",
-                    lineNumber: 18,
-                    columnNumber: 7
-                }, undefined)
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 17,
-                columnNumber: 5
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "App.js",
-        lineNumber: 15,
-        columnNumber: 3
-    }, undefined);
-_c1 = Header;
-const burgerking = [
-    {
-        "info": {
-            "id": "233804",
-            "name": "KFC",
-            "cloudinaryImageId": "56c9ab92bd79745fd152a30fa2525426",
-            "locality": "MG Road",
-            "areaName": "Ravipuram",
-            "costForTwo": "\u20B9400 for two",
-            "cuisines": [
-                "Burgers",
-                "Biryani",
-                "American",
-                "Snacks",
-                "Fast Food"
-            ],
-            "avgRating": 4.3,
-            "feeDetails": {
-                "restaurantId": "233804",
-                "fees": [
-                    {
-                        "name": "BASE_DISTANCE",
-                        "fee": 4900
-                    },
-                    {
-                        "name": "ANCILLARY_SURGE_FEE",
-                        "fee": 1500
-                    },
-                    {
-                        "name": "BASE_TIME"
-                    }
-                ],
-                "totalFee": 6400
-            },
-            "parentId": "547",
-            "avgRatingString": "4.3",
-            "totalRatingsString": "5K+",
-            "sla": {
-                "deliveryTime": 33,
-                "lastMileTravel": 4.9,
-                "serviceability": "SERVICEABLE",
-                "slaString": "33 mins",
-                "lastMileTravelString": "4.9 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2023-11-03 22:57:00",
-                "opened": true
-            },
-            "badges": {},
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "40% OFF",
-                "subHeader": "UPTO \u20B980"
-            },
-            "loyaltyDiscoverPresentationInfo": {
-                "logoCtx": {
-                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
-                },
-                "freedelMessage": "FREE DELIVERY",
-                "badgeType": "BADGE_TYPE_ONE_LITE"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
-        },
-        "analytics": {},
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/kfc-mg-road-ravipuram-kochi-233804",
-            "type": "WEBLINK"
-        }
-    },
-    {
-        "info": {
-            "id": "410156",
-            "name": "Starbucks Coffee",
-            "cloudinaryImageId": "4df3497f1460dfd1ecd8125222f6d362",
-            "locality": "Mig Housing Society",
-            "areaName": "Panampilly Nagar",
-            "costForTwo": "\u20B9400 for two",
-            "cuisines": [
-                "Beverages",
-                "Cafe",
-                "Snacks",
-                "Desserts",
-                "Bakery",
-                "Ice Cream"
-            ],
-            "avgRating": 4.3,
-            "feeDetails": {
-                "restaurantId": "410156",
-                "fees": [
-                    {
-                        "name": "BASE_DISTANCE",
-                        "fee": 6100
-                    },
-                    {
-                        "name": "ANCILLARY_SURGE_FEE",
-                        "fee": 1500
-                    },
-                    {
-                        "name": "BASE_TIME"
-                    }
-                ],
-                "totalFee": 7600
-            },
-            "parentId": "195515",
-            "avgRatingString": "4.3",
-            "totalRatingsString": "500+",
-            "sla": {
-                "deliveryTime": 37,
-                "lastMileTravel": 5.5,
-                "serviceability": "SERVICEABLE",
-                "slaString": "37 mins",
-                "lastMileTravelString": "5.5 km",
-                "iconType": "ICON_TYPE_EMPTY"
-            },
-            "availability": {
-                "nextCloseTime": "2023-11-03 23:59:00",
-                "opened": true
-            },
-            "badges": {},
-            "isOpen": true,
-            "type": "F",
-            "badgesV2": {
-                "entityBadges": {
-                    "imageBased": {},
-                    "textBased": {},
-                    "textExtendedBadges": {}
-                }
-            },
-            "aggregatedDiscountInfoV3": {
-                "header": "30% OFF",
-                "subHeader": "UPTO \u20B975"
-            },
-            "loyaltyDiscoverPresentationInfo": {
-                "logoCtx": {
-                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
-                },
-                "freedelMessage": "FREE DELIVERY",
-                "badgeType": "BADGE_TYPE_ONE_LITE"
-            },
-            "differentiatedUi": {
-                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                "differentiatedUiMediaDetails": {
-                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                    "lottie": {},
-                    "video": {}
-                }
-            },
-            "reviewsSummary": {},
-            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-            "restaurantOfferPresentationInfo": {}
-        },
-        "analytics": {},
-        "cta": {
-            "link": "https://www.swiggy.com/restaurants/starbucks-coffee-mig-housing-society-panampilly-nagar-kochi-410156",
-            "type": "WEBLINK"
-        }
-    }
-];
-const RestroCards = ({ name, cuisines, avgRating, cloudinaryImageId })=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "card",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + cloudinaryImageId
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 246,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: name
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 250,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: cuisines.join(", ")
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 251,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: avgRating
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 252,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "App.js",
-        lineNumber: 245,
-        columnNumber: 5
-    }, undefined);
-};
-_c2 = RestroCards;
-const Body = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "resturent-list",
-        children: burgerking.map((resturent)=>{
-            return /*#__PURE__*/ (0, _react.createElement)(RestroCards, {
-                ...resturent.info,
-                key: resturent.info.id,
-                __source: {
-                    fileName: "App.js",
-                    lineNumber: 264,
-                    columnNumber: 16
-                },
-                __self: undefined
-            });
-        })
-    }, void 0, false, {
-        fileName: "App.js",
-        lineNumber: 261,
-        columnNumber: 5
-    }, undefined);
-};
-_c3 = Body;
-const Footer = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-        children: "footer"
-    }, void 0, false, {
-        fileName: "App.js",
-        lineNumber: 275,
-        columnNumber: 10
-    }, undefined);
-};
-_c4 = Footer;
+var _title = require("./components/Title");
+var _body = require("./components/body");
+var _footer = require("./components/Footer");
 const Applayout = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 281,
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _title.Header), {}, void 0, false, {
+                fileName: "src/App.js",
+                lineNumber: 11,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 282,
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _body.Body), {}, void 0, false, {
+                fileName: "src/App.js",
+                lineNumber: 12,
                 columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Footer, {}, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 283,
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _footer.Footer), {}, void 0, false, {
+                fileName: "src/App.js",
+                lineNumber: 13,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true);
 };
-_c5 = Applayout;
+_c = Applayout;
 const rootElement = document.getElementById("root");
 (0, _reactDomDefault.default).render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Applayout, {}, void 0, false, {
-    fileName: "App.js",
-    lineNumber: 290,
+    fileName: "src/App.js",
+    lineNumber: 20,
     columnNumber: 17
 }, undefined), rootElement);
-var _c, _c1, _c2, _c3, _c4, _c5;
-$RefreshReg$(_c, "Title");
-$RefreshReg$(_c1, "Header");
-$RefreshReg$(_c2, "RestroCards");
-$RefreshReg$(_c3, "Body");
-$RefreshReg$(_c4, "Footer");
-$RefreshReg$(_c5, "Applayout");
+var _c;
+$RefreshReg$(_c, "Applayout");
 
-  $parcel$ReactRefreshHelpers$c1db.postlude(module);
+  $parcel$ReactRefreshHelpers$f00f.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./components/Title":"6wotK","./components/body":"fxbaO","./components/Footer":"8pPOA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27479,7 +27153,103 @@ module.exports = require("ef03b89c8fe2794e");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"gkKU3":[function(require,module,exports) {
+},{}],"6wotK":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$6418 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$6418.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Title", ()=>Title);
+parcelHelpers.export(exports, "Header", ()=>Header);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+        href: "/",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+            className: "logo",
+            alt: "logo",
+            src: "https://obs.line-scdn.net/0m0339dd5b72513e8a8d6127b836e5ecf1e128f1da5cb7?0"
+        }, void 0, false, {
+            fileName: "src/components/Title.js",
+            lineNumber: 3,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/Title.js",
+        lineNumber: 2,
+        columnNumber: 5
+    }, undefined);
+_c = Title;
+const Header = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "header",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
+                fileName: "src/components/Title.js",
+                lineNumber: 15,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "nav-items",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "Home"
+                        }, void 0, false, {
+                            fileName: "src/components/Title.js",
+                            lineNumber: 18,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "about us"
+                        }, void 0, false, {
+                            fileName: "src/components/Title.js",
+                            lineNumber: 19,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "contact us"
+                        }, void 0, false, {
+                            fileName: "src/components/Title.js",
+                            lineNumber: 20,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: "cart"
+                        }, void 0, false, {
+                            fileName: "src/components/Title.js",
+                            lineNumber: 21,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Title.js",
+                    lineNumber: 17,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Title.js",
+                lineNumber: 16,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Title.js",
+        lineNumber: 14,
+        columnNumber: 5
+    }, undefined);
+_c1 = Header;
+var _c, _c1;
+$RefreshReg$(_c, "Title");
+$RefreshReg$(_c1, "Header");
+
+  $parcel$ReactRefreshHelpers$6418.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27647,6 +27417,323 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}]},["j2WyO","1xC6H","2Ew96"], "2Ew96", "parcelRequiree8ef")
+},{"7422ead32dcc1e6b":"786KC"}],"fxbaO":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$3ad2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$3ad2.prelude(module);
 
-//# sourceMappingURL=index.7826abd7.js.map
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Body", ()=>Body);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _restrocards = require("./Restrocards");
+var _config = require("./config");
+const Body = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "resturent-list",
+        children: (0, _config.burgerking).map((resturent)=>{
+            return /*#__PURE__*/ (0, _react.createElement)((0, _restrocards.RestroCards), {
+                ...resturent.info,
+                key: resturent.info.id,
+                __source: {
+                    fileName: "src/components/body.js",
+                    lineNumber: 9,
+                    columnNumber: 18
+                },
+                __self: undefined
+            });
+        })
+    }, void 0, false, {
+        fileName: "src/components/body.js",
+        lineNumber: 6,
+        columnNumber: 7
+    }, undefined);
+};
+_c = Body;
+var _c;
+$RefreshReg$(_c, "Body");
+
+  $parcel$ReactRefreshHelpers$3ad2.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Restrocards":"8NkA2","./config":"4T6KH","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8NkA2":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$fd73 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$fd73.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "RestroCards", ()=>RestroCards);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _config = require("./config");
+const RestroCards = ({ name, cuisines, avgRating, cloudinaryImageId })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "card",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                src: (0, _config.IMG_URL_CDN) + cloudinaryImageId
+            }, void 0, false, {
+                fileName: "src/components/Restrocards.js",
+                lineNumber: 7,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: name
+            }, void 0, false, {
+                fileName: "src/components/Restrocards.js",
+                lineNumber: 11,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: cuisines.join(", ")
+            }, void 0, false, {
+                fileName: "src/components/Restrocards.js",
+                lineNumber: 12,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                children: avgRating
+            }, void 0, false, {
+                fileName: "src/components/Restrocards.js",
+                lineNumber: 13,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Restrocards.js",
+        lineNumber: 6,
+        columnNumber: 7
+    }, undefined);
+};
+_c = RestroCards;
+var _c;
+$RefreshReg$(_c, "RestroCards");
+
+  $parcel$ReactRefreshHelpers$fd73.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","./config":"4T6KH","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4T6KH":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "IMG_URL_CDN", ()=>IMG_URL_CDN);
+parcelHelpers.export(exports, "burgerking", ()=>burgerking);
+const IMG_URL_CDN = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
+const burgerking = [
+    {
+        "info": {
+            "id": "233804",
+            "name": "KFC",
+            "cloudinaryImageId": "56c9ab92bd79745fd152a30fa2525426",
+            "locality": "MG Road",
+            "areaName": "Ravipuram",
+            "costForTwo": "\u20B9400 for two",
+            "cuisines": [
+                "Burgers",
+                "Biryani",
+                "American",
+                "Snacks",
+                "Fast Food"
+            ],
+            "avgRating": 4.3,
+            "feeDetails": {
+                "restaurantId": "233804",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 4900
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE",
+                        "fee": 1500
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    }
+                ],
+                "totalFee": 6400
+            },
+            "parentId": "547",
+            "avgRatingString": "4.3",
+            "totalRatingsString": "5K+",
+            "sla": {
+                "deliveryTime": 33,
+                "lastMileTravel": 4.9,
+                "serviceability": "SERVICEABLE",
+                "slaString": "33 mins",
+                "lastMileTravelString": "4.9 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-11-03 22:57:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "40% OFF",
+                "subHeader": "UPTO \u20B980"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                },
+                "freedelMessage": "FREE DELIVERY",
+                "badgeType": "BADGE_TYPE_ONE_LITE"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "https://www.swiggy.com/restaurants/kfc-mg-road-ravipuram-kochi-233804",
+            "type": "WEBLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "410156",
+            "name": "Starbucks Coffee",
+            "cloudinaryImageId": "4df3497f1460dfd1ecd8125222f6d362",
+            "locality": "Mig Housing Society",
+            "areaName": "Panampilly Nagar",
+            "costForTwo": "\u20B9400 for two",
+            "cuisines": [
+                "Beverages",
+                "Cafe",
+                "Snacks",
+                "Desserts",
+                "Bakery",
+                "Ice Cream"
+            ],
+            "avgRating": 4.3,
+            "feeDetails": {
+                "restaurantId": "410156",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 6100
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE",
+                        "fee": 1500
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    }
+                ],
+                "totalFee": 7600
+            },
+            "parentId": "195515",
+            "avgRatingString": "4.3",
+            "totalRatingsString": "500+",
+            "sla": {
+                "deliveryTime": 37,
+                "lastMileTravel": 5.5,
+                "serviceability": "SERVICEABLE",
+                "slaString": "37 mins",
+                "lastMileTravelString": "5.5 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-11-03 23:59:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "30% OFF",
+                "subHeader": "UPTO \u20B975"
+            },
+            "loyaltyDiscoverPresentationInfo": {
+                "logoCtx": {
+                    "logo": "Swiggy%20One%20Lite/One_lite_vertical_logo.png"
+                },
+                "freedelMessage": "FREE DELIVERY",
+                "badgeType": "BADGE_TYPE_ONE_LITE"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "https://www.swiggy.com/restaurants/starbucks-coffee-mig-housing-society-panampilly-nagar-kochi-410156",
+            "type": "WEBLINK"
+        }
+    }
+];
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8pPOA":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$bc7c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$bc7c.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Footer", ()=>Footer);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const Footer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+        children: "footer"
+    }, void 0, false, {
+        fileName: "src/components/Footer.js",
+        lineNumber: 2,
+        columnNumber: 12
+    }, undefined);
+};
+_c = Footer;
+var _c;
+$RefreshReg$(_c, "Footer");
+
+  $parcel$ReactRefreshHelpers$bc7c.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["bgABq","1xC6H","2kQhy"], "2kQhy", "parcelRequiree8ef")
+
+//# sourceMappingURL=index.7271efb6.js.map
