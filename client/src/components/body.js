@@ -1,6 +1,6 @@
 import { RestroCards } from "./Restrocards";
 import { burgerking } from "./config";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 
 function filterdata(search,resturentlist){
@@ -15,6 +15,19 @@ function filterdata(search,resturentlist){
 export const Body = () => {
 const [search,setSearch]=useState("")
 const[resturentlist,setResturentlist]=useState(burgerking)
+
+useEffect(()=>{
+getRestuents()
+},[])
+
+
+async function getRestuents(){
+  const data= await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=9.944005&lng=76.32809&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
+  const json= await data.json()
+  // console.log(json);
+  
+  setResturentlist(json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+}
     return (
 <>
       <div className="search-container" >
