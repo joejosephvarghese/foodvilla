@@ -27439,8 +27439,9 @@ function filterdata(search, resturentlist) {
 }
 const Body = ()=>{
     _s();
-    const [search, setSearch] = (0, _react.useState)("");
+    const [search, setSearch] = (0, _react.useState)([]);
     const [resturentlist, setResturentlist] = (0, _react.useState)([]);
+    const [filteredRestaurant, setFilteredRestaurant] = (0, _react.useState)([]);
     (0, _react.useEffect)(()=>{
         getRestuents();
     }, []);
@@ -27449,10 +27450,11 @@ const Body = ()=>{
         const json = await data.json();
         // console.log(json);
         setResturentlist(json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+        setFilteredRestaurant(json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     }
     return resturentlist.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmer.Shimmer), {}, void 0, false, {
         fileName: "src/components/body.js",
-        lineNumber: 32,
+        lineNumber: 34,
         columnNumber: 38
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
@@ -27469,36 +27471,36 @@ const Body = ()=>{
                         }
                     }, void 0, false, {
                         fileName: "src/components/body.js",
-                        lineNumber: 35,
+                        lineNumber: 37,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                         className: "search-btn",
                         onClick: ()=>{
                             const data = filterdata(search, resturentlist);
-                            setResturentlist(data);
+                            setFilteredRestaurant(data);
                         },
                         children: "search"
                     }, void 0, false, {
                         fileName: "src/components/body.js",
-                        lineNumber: 45,
+                        lineNumber: 47,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/body.js",
-                lineNumber: 34,
+                lineNumber: 36,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "resturent-list",
-                children: resturentlist.map((resturent)=>{
+                children: filteredRestaurant.map((resturent)=>{
                     return /*#__PURE__*/ (0, _react.createElement)((0, _restrocards.RestroCards), {
                         ...resturent.info,
                         key: resturent.info.id,
                         __source: {
                             fileName: "src/components/body.js",
-                            lineNumber: 58,
+                            lineNumber: 60,
                             columnNumber: 18
                         },
                         __self: undefined
@@ -27506,13 +27508,13 @@ const Body = ()=>{
                 })
             }, void 0, false, {
                 fileName: "src/components/body.js",
-                lineNumber: 56,
+                lineNumber: 58,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true);
 };
-_s(Body, "BniGDDUzKsmILRvwE/6L5vhJE6o=");
+_s(Body, "yYVfwXuiZ5ZStJPTDXqJHrurrW4=");
 _c = Body;
 var _c;
 $RefreshReg$(_c, "Body");

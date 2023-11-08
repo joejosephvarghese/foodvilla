@@ -11,9 +11,9 @@ function filterdata(search, resturentlist) {
 }
 
 export const Body = () => {
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState([]);
   const [resturentlist, setResturentlist] = useState([]);
-
+  const [filteredRestaurant,setFilteredRestaurant]=useState([])
   useEffect(() => {
     getRestuents();
   }, []);
@@ -28,6 +28,8 @@ export const Body = () => {
     setResturentlist(
       json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
+
+    setFilteredRestaurant( json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
   }
   return (resturentlist.length===0)? <Shimmer/>:(
     <>
@@ -47,14 +49,14 @@ export const Body = () => {
           onClick={() => {
             const data = filterdata(search, resturentlist);
 
-            setResturentlist(data);
+           setFilteredRestaurant(data);
           }}
         >
           search
         </button>
       </div>
       <div className="resturent-list">
-        {resturentlist.map((resturent) => {
+        {filteredRestaurant.map((resturent) => {
           return <RestroCards {...resturent.info} key={resturent.info.id} />;
         })}
       </div>
