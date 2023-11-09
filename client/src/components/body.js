@@ -5,7 +5,7 @@ import { Shimmer } from "./shimmer";
 
 function filterdata(search, resturentlist) {
   const filterdata = resturentlist.filter((resturent) =>
-    resturent.info.name.includes(search)
+    resturent?.info?.name?.toLowerCase()?. includes(search.toLowerCase())
   );
   return filterdata;
 }
@@ -31,7 +31,11 @@ export const Body = () => {
 
     setFilteredRestaurant( json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
   }
-  return (resturentlist.length===0)? <Shimmer/>:(
+//not render component
+  if(!resturentlist) return null;
+
+  if(filteredRestaurant?.length===0)return <h1>No Restuarant Match Your Search</h1>
+  return (resturentlist?.length===0)? <Shimmer/>:(
     <>
       <div className="search-container">
         <input

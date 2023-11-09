@@ -27434,7 +27434,7 @@ var _config = require("./config");
 var _shimmer = require("./shimmer");
 var _s = $RefreshSig$();
 function filterdata(search, resturentlist) {
-    const filterdata = resturentlist.filter((resturent)=>resturent.info.name.includes(search));
+    const filterdata = resturentlist.filter((resturent)=>resturent?.info?.name?.toLowerCase()?.includes(search.toLowerCase()));
     return filterdata;
 }
 const Body = ()=>{
@@ -27452,10 +27452,19 @@ const Body = ()=>{
         setResturentlist(json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
         setFilteredRestaurant(json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     }
-    return resturentlist.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmer.Shimmer), {}, void 0, false, {
+    //not render component
+    if (!resturentlist) return null;
+    if (filteredRestaurant?.length === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: "No Restuarant Match Your Search"
+    }, void 0, false, {
         fileName: "src/components/body.js",
-        lineNumber: 34,
-        columnNumber: 38
+        lineNumber: 37,
+        columnNumber: 44
+    }, undefined);
+    return resturentlist?.length === 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmer.Shimmer), {}, void 0, false, {
+        fileName: "src/components/body.js",
+        lineNumber: 38,
+        columnNumber: 39
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27471,7 +27480,7 @@ const Body = ()=>{
                         }
                     }, void 0, false, {
                         fileName: "src/components/body.js",
-                        lineNumber: 37,
+                        lineNumber: 41,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -27483,13 +27492,13 @@ const Body = ()=>{
                         children: "search"
                     }, void 0, false, {
                         fileName: "src/components/body.js",
-                        lineNumber: 47,
+                        lineNumber: 51,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/body.js",
-                lineNumber: 36,
+                lineNumber: 40,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27500,7 +27509,7 @@ const Body = ()=>{
                         key: resturent.info.id,
                         __source: {
                             fileName: "src/components/body.js",
-                            lineNumber: 60,
+                            lineNumber: 64,
                             columnNumber: 18
                         },
                         __self: undefined
@@ -27508,7 +27517,7 @@ const Body = ()=>{
                 })
             }, void 0, false, {
                 fileName: "src/components/body.js",
-                lineNumber: 58,
+                lineNumber: 62,
                 columnNumber: 7
             }, undefined)
         ]
@@ -27524,7 +27533,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Restrocards":"8NkA2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./config":"4T6KH","./shimmer":"fWXGy"}],"8NkA2":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Restrocards":"8NkA2","./config":"4T6KH","./shimmer":"fWXGy","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8NkA2":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$fd73 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27584,7 +27593,7 @@ $RefreshReg$(_c, "RestroCards");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./config":"4T6KH"}],"4T6KH":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./config":"4T6KH","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4T6KH":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "IMG_URL_CDN", ()=>IMG_URL_CDN);
@@ -27797,7 +27806,7 @@ $RefreshReg$(_c, "Shimmer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8pPOA":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8pPOA":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bc7c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
